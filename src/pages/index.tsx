@@ -73,7 +73,7 @@ const Index = () => {
                   triggerOffset={300}
                   delayInMilliseconds={0}
                 >
-                  or will I 😜?
+                  or will I &#128540;?
                 </FadeIn>
               </div>
             )}
@@ -82,7 +82,7 @@ const Index = () => {
         <div className="mt-5 flex w-[50vw] content-center justify-center place-self-center overflow-auto rounded-xl bg-white p-5 text-center text-xs text-blue-700 lg:w-[30vw] lg:text-lg">
           <form className={'w-full'}>
             <textarea
-              placeholder="Over here ☺️"
+              placeholder="Over here &#128557;"
               className={
                 'arial mb-3 w-full border border-blue-600 px-3 py-2 focus:border-blue-500 focus:ring-blue-500'
               }
