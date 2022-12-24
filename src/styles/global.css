@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@tailwind base;
+
+body {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+.force-font {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+.histories {
+  color: red;
+  font-size: 50px;
+}
+
+.raleway {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+.arial {
+  font-family: "Arial", "Open Sans", sans-serif;
+}
+
+a {
+  @apply text-amber-700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+
+.hidden-self {
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.shown-self {
+  opacity: 1;
+  visibility: visible;
+}
