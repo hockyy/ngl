@@ -23,7 +23,7 @@ const Main = (props: IMainProps) => {
           ♥
         </span>{' '}
         by{' '}
-        <a href="https://github.com/semweb-qs"> QS World Semantic Web Team</a>.
+        <a href="https://instagram.com/__hocky"> Hocky Yudhiono 🍀</a>.
         Repository setup by{' '}
         <a href="https://creativedesignsguru.com"> CreativeDesignsGuru</a>.
         {/*

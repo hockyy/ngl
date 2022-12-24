@@ -1,12 +1,13 @@
-import {useRouter} from 'next/router';
-import {useCallback, useEffect, useRef} from 'react';
+import { useRouter } from 'next/router';
+import { useCallback, useEffect, useRef } from 'react';
 import Particles from 'react-tsparticles';
-import {loadFull} from 'tsparticles';
-import type {Engine} from 'tsparticles-engine';
+import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
 import Typed from 'typed.js';
-import {Meta} from '@/layouts/Meta';
-import {Main} from '@/templates/Main';
-import {particlesConfig} from '@/utils/particlesConfig';
+
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
+import { particlesConfig } from '@/utils/particlesConfig';
 
 const Index = () => {
   const router = useRouter();
@@ -28,29 +29,22 @@ const Index = () => {
   }, []);
 
   return (
-    <Main
-      meta={
-        <Meta
-          title="Not Gonna Lie!"
-          description="Hush"
-        />
-      }
-    >
+    <Main meta={<Meta title="Not Gonna Lie!" description="Hush" />}>
       <Particles
-        className={'z-[-1] fixed'}
+        className={'fixed z-[-1]'}
         id="tsparticles"
         init={particlesInit}
         /*
             // @ts-ignore */
         options={particlesConfig}
       />
-      <div className="flex justify-center text-center content-center max-w-screen-md w-full mx-auto">
+      <div className="mx-auto flex w-full max-w-screen-md content-center justify-center text-center">
         <a
           href={'/'}
-          className="w-[70vw] max-w-xl mx-auto flex pt-16 pb-8 content-center items-center text-center justify-center"
+          className="mx-auto flex w-[70vw] max-w-xl content-center items-center justify-center pt-16 pb-8 text-center"
         >
           <img
-            className="z-10 p-0 m-0"
+            className="z-10 m-0 p-0"
             src={`${router.basePath}/assets/qs-world.png`}
             alt={'Medigle logo'}
           ></img>
@@ -58,16 +52,16 @@ const Index = () => {
       </div>
       <div
         className={
-          'flex w-[70vw] max-w-xl justify-center content-center align-middle mx-auto'
+          'mx-auto flex w-[70vw] max-w-xl content-center justify-center align-middle'
         }
       >
         <div
           className={
-            'flex flex-row justify-center text-center font-bold text-2xl sm:text-4xl'
+            'flex flex-row justify-center text-center text-2xl font-bold sm:text-4xl'
           }
         >
           <div
-            className={'flex flex-col lg:flex-row break-words whitespace-pre'}
+            className={'flex flex-col whitespace-pre break-words lg:flex-row'}
           >
             <div>
               The <span ref={typeTarget} />
@@ -77,10 +71,10 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center text-center content-center max-w-screen-md w-full mx-auto">
+      <div className="mx-auto flex w-full max-w-screen-md content-center justify-center text-center">
         <a
           className={
-            'text-xl sm:text-2xl mt-[10vh] font-bold shadow px-6 py-2 sm:px-10 sm:py-5 rounded-xl bg-amber-400/30'
+            'mt-[10vh] rounded-xl bg-amber-400/30 px-6 py-2 text-xl font-bold shadow sm:px-10 sm:py-5 sm:text-2xl'
           }
           href={'/search'}
         >
