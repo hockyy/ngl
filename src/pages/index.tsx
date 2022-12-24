@@ -38,7 +38,6 @@ const Index = () => {
   const ref = useRef(null);
 
   const handleSend = async (message) => {
-    console.log(message);
     await axios
       .post(
         AppConfig.backend,
