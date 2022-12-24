@@ -4,11 +4,11 @@ export const particlesConfig = {
       value: 50,
       density: {
         enable: true,
-        value_area: 900,
+        value_area: 400,
       },
     },
     color: {
-      value: '#d97006',
+      value: '#ffffff',
     },
     shape: {
       type: 'circle',
@@ -21,12 +21,12 @@ export const particlesConfig = {
       },
     },
     opacity: {
-      value: 0.3,
-      random: false,
+      value: 1,
+      random: true,
       anim: {
         enable: false,
         speed: 0.1,
-        opacity_min: 0.1,
+        opacity_min: 0.5,
         sync: false,
       },
     },
@@ -40,17 +40,10 @@ export const particlesConfig = {
         sync: false,
       },
     },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: '#d97006',
-      opacity: 0.4,
-      width: 1,
-    },
     move: {
       enable: true,
       speed: 1,
-      direction: 'none',
+      direction: 'bottom',
       random: false,
       straight: false,
       out_mode: 'out',
@@ -66,7 +59,7 @@ export const particlesConfig = {
     detect_on: 'window',
     events: {
       onhover: {
-        enable: true,
+        enable: false,
         mode: 'grab',
       },
       onclick: {

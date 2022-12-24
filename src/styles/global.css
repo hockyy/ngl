@@ -5,7 +5,16 @@
 
 body {
   font-family: "Raleway", "Open Sans", sans-serif;
-  background-color: #ffffff;
+  background-color: #003d7c;
+}
+
+.unselectable {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .force-font {
@@ -26,7 +35,7 @@ body {
 }
 
 a {
-  @apply text-amber-700;
+  @apply text-blue-100;
 }
 
 a:hover {
