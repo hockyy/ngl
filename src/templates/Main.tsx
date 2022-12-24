@@ -39,7 +39,7 @@ const Main = (props: IMainProps) => {
         <span role="img" aria-label="Love">
           ♥
         </span>{' '}
-        by <a href="https://instagram.com/__hocky"> Hocky Yudhiono 🍀</a>.
+        by <a href="https://instagram.com/__hocky"> Hocky Yudhiono &#127808;</a>.
         Repository setup by{' '}
         <a href="https://creativedesignsguru.com"> CreativeDesignsGuru</a>.
         {/*

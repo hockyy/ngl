@@ -60,11 +60,13 @@ const Index = () => {
           <div
             className={'flex flex-col whitespace-pre break-words lg:flex-col'}
           >
+            <div>You can</div>
             <div>
-              You can sent me any
-              <span ref={typeTarget} />
+              send <a href="https://instagram.com/__hocky">Hocky &#127808;</a>{' '}
+              any
+              <span ref={typeTarget} />.
             </div>
-            <div className={'text-blue-200'}>I won&apos;t know</div>
+            <div className={'text-blue-200'}>He won&apos;t know,</div>
             {prank && (
               <div>
                 <FadeIn
@@ -73,7 +75,7 @@ const Index = () => {
                   triggerOffset={300}
                   delayInMilliseconds={0}
                 >
-                  or will I &#128540;?
+                  or will he &#128540;?
                 </FadeIn>
               </div>
             )}
