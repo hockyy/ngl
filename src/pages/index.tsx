@@ -109,7 +109,9 @@ const Index = () => {
               any
               <span ref={typeTarget} />.
             </div>
-            <div className={'text-blue-200'}>He won&apos;t know,</div>
+            <div className={'text-blue-200'}>
+              He won&apos;t know your identity,
+            </div>
             {prank && (
               <div>
                 <FadeIn
